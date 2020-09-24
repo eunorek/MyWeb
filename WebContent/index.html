@@ -3,46 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <title>GOG.com</title>
-<link href="./css/common/reset.css" rel="stylesheet">
-<style type="text/css">
-body{
-	background-color: #D8D8D8;
-	}
-
-header{
-background-color: black;
-	height: 56px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-}
-
-#main_container{
-background-color: red;
-	height: auto
-	width: 90%;
-	
-}
-
-footer{
-background-color: black;
-	height: 239px;
-	width: 100%;
-	margin-bottom: 0;
-
-}
-
-</style>
+<link href="./css/reset.css" rel="stylesheet">
+<link href="./css/style_header.css" rel="stylesheet">
+<link href="./css/style_content.css" rel="stylesheet">
+<link href="./css/style_footer.css" rel="stylesheet">
 </head>
 <body>
 	<header>
-	
+		<img src="./images/common/header_top.jpg" id="header_top">
+		<div id="header_container">
+			<div id="header_logo" class="header_menu">
+				<img src="./images/common/gog_logo.svg">
+			</div>
+			<nav id="header_nav" class="header_menu">
+				<ul>
+					<li>STORE⋁</li>
+					<li>ABOUT⋁</li>
+					<li>COMMUNITY⋁</li>
+					<li>SUPPORT⋁</li>
+					<li>SIGN IN⋁</li>			
+				</ul>
+			</nav>
+			<nav id="header_sub" class="header_menu"></nav>
+		</div>	
 	</header>
 	<section id="main_container">
 		<article id="featured">
-			<img src="./images/featured_background.jpg">
+			<div id="featured_title">
+				<p>Highlights</p>
+			</div>
+			
+			<hr>
+			<div id="main_content_big">
+				<img src="./images/featured_background.jpg" id="featured_bg">
+				<!--img src="./images/featured_logo.jpg" id="featured_logo"-->
+			</div>
+			<div id="main_content_small">
+				<div class="featured_small">
+					<img src="./images/featured_small_1.jpg">
+					<div class="featured_small_label"></div>
+				</div>
+				<div class="featured_small">
+					<img src="./images/featured_small_2.jpg">
+					<div class="featured_small_label"></div>
+				</div>
+				<div class="featured_small">
+					<img src="./images/featured_small_3.jpg">
+					<div class="featured_small_label"></div>
+				</div>				
+				<div class="featured_small">
+					<img src="./images/featured_small_4.jpg">
+					<div class="featured_small_label"></div>
+				</div>						
+				
+			</div>
+	
 		</article>
-		
+
 		
 	</section>
 	<footer>

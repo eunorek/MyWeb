@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+	header{
+		background-color: #1A1A1AE6;
+		height: 56px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		padding: 0;
+	}
+	
+	#header_top{
+		position: absolute;
+		top:0;
+	
+	}
+	
+	#header_container{
+background-color: orange;	
+		height: 50px;
+		width: 85%;
+		margin: 2px auto 0;
+	}
+	
+	#header_logo{
+		width: 8%;
+		height: 50px;
+background-color: pink;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		float: left;
+	}
+	
+	#header_logo img{
+		width: auto;
+		height: 100%;
+		position: absolute;
+		top: 7px;
+	}
+	
+	#header_nav{
+		width: 40%;
+		height: 50px;
+background-color: green;
+		display: inline-block;
+		float: left;
+	
+	}
+	
+	#header_sub{
+background-color: green;
+		width: 15%;
+		height: 50px;
+		display: inline-block;
+		float: right;
+	}
