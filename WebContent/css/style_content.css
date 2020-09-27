@@ -7,7 +7,7 @@
 	#main_container{
 	background-color: red;
 		height: auto;
-		width: 90%;
+		width: 95%;
 		margin: 80px auto;
 		display: flex;
 		flex-direction: column;
