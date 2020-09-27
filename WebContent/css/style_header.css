@@ -16,7 +16,7 @@
 	}
 	
 	#header_container{
-background-color: orange;	
+/*background-color: orange;	*/
 		height: 50px;
 		width: 85%;
 		margin: 2px auto 0;
@@ -25,7 +25,7 @@ background-color: orange;
 	#header_logo{
 		width: 8%;
 		height: 50px;
-background-color: pink;
+/*background-color: pink;*/
 		position: relative;
 		display: inline-block;
 		overflow: hidden;
@@ -42,7 +42,7 @@ background-color: pink;
 	#header_nav{
 		width: 50%;
 		height: 50px;
-background-color: green;
+/*background-color: green;*/
 		display: inline-block;
 		float: left;
 	
@@ -59,12 +59,29 @@ background-color: green;
 		margin: 0 15px;
 	}
 	
-	#header_nav a{
-		color: white;
+	.nav_menu{
+		color: #CCCCCC;
 		text-decoration: none;
 		font-weight: bold;
-		font-size: 0.85rem;
+		font-size: 1rem;
 		text-align: left;
+	}
+	
+	.nav_menu:hover{
+		color:white;
+		text-decoration: none;
+	}
+	
+	.nav_signin{
+		color: #DE8AE5;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1rem;
+		text-align: left;	
+	}
+	
+	.nav_signin:hover{ 
+		color: #F9B2FF;
 	}
 	
 	#header_sub{

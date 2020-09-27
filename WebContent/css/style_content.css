@@ -1,6 +1,6 @@
 @charset "UTF-8";
 	body{
-		background-color: #D8D8D8;
+		background-color: #D8D8D8 !important;
 		overflow: scroll;
 		}
 		
@@ -8,7 +8,7 @@
 	background-color: red;
 		height: auto;
 		width: 90%;
-		margin: 80px auto 150px;
+		margin: 80px auto;
 		display: flex;
 		flex-direction: column;
 	}
@@ -66,4 +66,58 @@ background-color: blue;
 	
 	.featured_small_label{
 		height: 60px;
+	}
+	
+	#galaxy_section{
+		margin: 16px 0 24px;
+		padding: 10px 16px;
+		display: flex;
+		align-items: center;	
+		border-top: 1px #1A1A1AE6 solid;
+		border-bottom: 1px #1A1A1AE6 solid;
+background-color: white;
+	}
+	
+	#galaxy_section > div{
+		width: 70%;
+	}
+	
+	.galaxy_section_info{
+		text-decoration: none;
+		color: #404040;
+		font-size: 14px;
+		font-weight: 550;
+		line-height: 1;
+	}
+	
+	.galaxy_section_highlighted{
+		color: #86328A;
+	}
+	
+	#explore_galaxy_container{
+		width: 25%;
+		
+		margin-left: 60px;
+		border-left: 1px #1A1A1AE6 solid;
+		padding-left: 44px;
+	}
+	
+	
+	
+	#explore_galaxy_container div{
+		height: 52px;
+		line-height: 52px;
+		display: inline-block;
+		float: left;
+		margin-right: 6px;
+	}
+	
+	#explore_galaxy_logo img{
+		margin: auto 0;
+	}
+	
+	#explore_galaxy_text a{
+		text-decoration: none;
+		color: #86328a;
+		font-weight: bold;
 	}
