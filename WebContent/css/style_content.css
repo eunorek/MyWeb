@@ -45,7 +45,7 @@ background-color:purple;
 	
 	#main_content_small{
 background-color: blue;
-		width: 100%;
+		width: 90%;
 		height: auto;
 		margin: 10px auto;
 	}
@@ -58,6 +58,7 @@ background-color: blue;
 		box-sizing: border-box;
 		float: left; 
 		margin: 2% 0.4%;
+		box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
 	}
 	
 	.featured_small img{

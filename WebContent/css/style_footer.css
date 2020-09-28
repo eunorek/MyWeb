@@ -2,9 +2,28 @@
 	
 	footer{
 	background-color: #1A1A1AE6;
+	color: red;
 		height: 239px;
 		width: 100%;
 		margin-bottom: 0;
 		margin-top: 10px;
 	
 	}
+	
+	.footer-top{
+background-color: orange;
+		height: 41px;
+		width: 100%;
+	}
+	
+	.footer-middle{
+		background-color: #2F2F2F;
+		height: 94px;
+		width: 100%
+	}
+	
+	.footer-bottom{
+background-color: orange;
+		height: 110px;
+		width: 100%;
+	}	

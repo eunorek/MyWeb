@@ -48,14 +48,13 @@
 	
 	}
 	
-	#header_nav li{
+	#header_nav>ul>li{
 		float: left;
 		list-style: none;
 		height: 50px;
 		width: auto;
 		display: inline-block;
 		line-height: 50px;
-		border: 1px black solid;
 		margin: 0 15px;
 	}
 	
@@ -67,10 +66,28 @@
 		text-align: left;
 	}
 	
+
+
+	.nav_menu:visited{
+		color: #CCCCCC;
+		text-decoration: none;	
+	}
+	
+	.nav_menu:focus{
+		color: #CCCCCC;
+		text-decoration: none;	
+	}	
 	.nav_menu:hover{
 		color:white;
 		text-decoration: none;
+		
+	}	
+	.dropdown-menu li{
+		margin: 0;
+	
 	}
+		
+	
 	
 	.nav_signin{
 		color: #DE8AE5;
