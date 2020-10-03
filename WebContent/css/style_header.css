@@ -47,7 +47,7 @@
 		float: left;
 	
 	}
-	
+/* for nav menus only */
 	#header_nav>ul>li{
 		float: left;
 		list-style: none;
@@ -56,6 +56,12 @@
 		display: inline-block;
 		line-height: 50px;
 		margin: 0 15px;
+	}
+	
+/* overrides nav menu style for dropdown items */	
+	.dropdown-menu>li{
+		height: auto;
+		line-height: 30px;
 	}
 	
 	.nav_menu{
@@ -85,9 +91,7 @@
 	.dropdown-menu li{
 		margin: 0;
 	
-	}
-		
-	
+	}	
 	
 	.nav_signin{
 		color: #DE8AE5;
@@ -96,11 +100,21 @@
 		font-size: 1.5rem;
 		text-align: left;	
 	}
+	.nav_signin:visited{
+		color: #DE8AE5;
+		text-decoration: none; 
+	}	
+	
+	.nav_signin:focus{
+		color: #DE8AE5;
+		text-decoration: none;
+	}	
 	
 	.nav_signin:hover{ 
 		color: #F9B2FF;
 		text-decoration: none;
 	}
+		
 	
 	#header_sub{
 background-color: green;

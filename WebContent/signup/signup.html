@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>ID : <input type="text" id="id"></p>
+	<div id="idResult"></div>
+	<!-- pw: 6글자 이상, 14글자 미만 -->
+	<!-- 두번째 패스워드 입력 시 패스워드가 일치(blue)|다릅니다(red) 나타남-->
+	<p>패스워드 : <input type="text" id="pw"></p>
+	<p>PW-re : <input type="text" id="pw-re"></p>
+	<div id="pwResult"></div>
+	
+	<!-- 입력하지 않은 것 아래에 꼭 입력하라는 텍스트 나오게 하기 -->
+	<p>Name : <input type="text" id="name"></p>
+	<div id="nameResult"> </div>
+	<p>Phone : <input type="text" id="phone"></p>
+	<div id="phoneResult"> </div>
+	<p>Email : <input type="text" id="email"></p>
+	<div id="emailResult"> </div>
+	<!-- 하나라도 비어있으면 안됨: 전체 검사 -->
+	<!--  Join 버튼 클릭 시 모든 조건이 만족되면 Success // Fail -->
+	<input type="button" value="Join" id="join-btn">
+
+<script type="text/javascript">
+	// gets updated on keyup event
+	
+	var idResult = document.getElementById("idResult")
+	var pwResult = document.getElementById("pwResult")
+	var nameResult = document.getElementById("nameResult")
+	var phoneResult = document.getElementById("phoneResult")
+	var emailResult = document.getElementById("emailResult")	
+	<!-- id: 5글자 이상, 10글자 미만  -->
+	document.getElementById("id").addEventListener('keyup', function(){	
+		if(!idCheck()){
+			idResult.style.color = "red"
+			idResult.innerText = "5자 이상, 10자 미만으로 입력해주세요"			
+		}else{
+			idResult.style.color = "green"
+			idResult.innerText = "멋진 id네요 :-)"
+		}
+	})
+	//pw events
+	document.getElementById("pw").addEventListener('keyup', function(){
+		if(!pwCheck()){
+			pwResult.style.color = "red"
+			pwResult.innerText = "6글자 이상, 14글자 미만으로 입력해주세요"
+		}else if(!pwMatch()){
+			pwResult.style.color = "red"
+			pwResult.innerText = "패스워드가 일치하지 않습니다"			
+		}else{
+			pwResult.style.color = "green"
+			pwResult.innerText = "패스워드가 일치합니다"	
+		}
+	})
+
+	document.getElementById("pw-re").addEventListener('keyup', function(){
+		if(pwCheck() && pwMatch()){
+			pwResult.style.color = "green"
+			pwResult.innerText = "패스워드가 일치합니다"		
+		}else if(!pwCheck()){
+			pwResult.style.color = "red"
+			pwResult.innerText = "6글자 이상, 14글자 미만으로 입력해주세요"			
+		}else{
+			pwResult.style.color = "red"
+			pwResult.innerText = "패스워드가 일치하지 않습니다"				
+		}
+	})
+	// name event
+	document.getElementById("name").addEventListener('keyup', function(){
+		if(!checkNotEmpty("name")){
+			nameResult.style.color = "red"
+			nameResult.innerText = "내용을 입력해주세요"
+		}else{
+			nameResult.innerText = ""
+		}
+	})
+	// phone event
+	document.getElementById("phone").addEventListener('keyup', function(){
+		if(!checkNotEmpty("phone")){
+			phoneResult.style.color = "red"
+			phoneResult.innerText = "내용을 입력해주세요"
+		}else{
+			phoneResult.innerText = ""
+		}
+	})
+	// email event
+	document.getElementById("email").addEventListener('keyup', function(){
+		if(!checkNotEmpty("email")){
+			emailResult.style.color = "red"
+			emailResult.innerText = "내용을 입력해주세요"
+		}else{
+			emailResult.innerText = ""
+		}
+	})
+	// join button event
+	document.getElementById("join-btn").addEventListener('click', function(){
+		if(idCheck()&&pwCheck()&&pwMatch()&&
+				checkNotEmpty("name")&&checkNotEmpty("phone")&&checkNotEmpty("email")){
+			alert("가입이 완료되었습니다")
+		}else{
+			if(!checkNotEmpty("name")){
+				nameResult.style.color = "red"
+				nameResult.innerText = "내용을 입력해주세요"				
+			}
+			if(!checkNotEmpty("phone")){
+				phoneResult.style.color = "red"
+				phoneResult.innerText = "내용을 입력해주세요"				
+			}
+			if(!checkNotEmpty("email")){
+				emailResult.style.color = "red"
+				emailResult.innerText = "내용을 입력해주세요"				
+			}
+			alert("작성이 미흡한 항목이 있습니다")
+		}
+	})
+	
+	<!-- id: 5글자 이상, 10글자 미만  -->
+	function idCheck(){
+		var idLen = document.getElementById("id").value.length
+		if(idLen>=5 && idLen<10){
+			return true
+		}else{
+			return false
+		}
+	}
+	<!-- pw: 6글자 이상, 14글자 미만 -->	
+	function pwCheck(){
+		var pwLen = document.getElementById("pw").value.length
+		if(pwLen>=6 && pwLen<14){
+			return true
+		}else{
+			return false
+		}
+	}
+	
+	function pwMatch(){
+		if(document.getElementById("pw").value == document.getElementById("pw-re").value){
+			return true
+		}else{
+			return false
+		}
+	}
+	
+	function checkNotEmpty(id){
+		if(document.getElementById(id).value.length > 0){
+			return true
+		}else{
+			return false
+		}
+	}
+	<!-- 입력하지 않은 것 아래에 꼭 입력하라는 텍스트 나오게 하기 -->
+</script>
+</body>
+</html>
