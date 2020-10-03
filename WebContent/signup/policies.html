@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<p><input type="checkbox" class="checkbox" id="checkAll" >전체 동의</p>
+	<p><input type="checkbox" class="mendatory">필수 1</p>
+	<p><input type="checkbox" class="mendatory">필수 2</p>
+	<p><input type="checkbox" class="mendatory">필수 3</p>
+	<p><input type="checkbox" class="mendatory">필수 4</p>
+	<!-- 4개 다 체크 되어야지 join 가능 -->
+	<p><input type="button" value="Join" id="btn-join"></p>
+	<script>
+		 var checks = document.getElementsByClassName("mendatory")
+		 var checkAll = document.getElementById("checkAll")
+		 var join = document.getElementById("btn-join")
+		 
+		 // join button event
+		 join.addEventListener('click', function(){
+			if(checkAll.checked){
+				location.href="./signup.html"
+			}else{
+				alert("FAIL")
+			}		
+		})
+		 
+		// checkAll button event 
+		checkAll.addEventListener('click', function(){
+			// set all the mendatory class btns same as checkAll
+			var checkAllStatus = checkAll.checked
+			for(cb of checks){
+				cb.checked = checkAllStatus
+			}
+		})
+		
+		// set checkAll's status according to the mendatory class btns' status change
+		for(cb of checks){
+			cb.addEventListener('click', function(){
+				changeCheckAllStatus()
+			})
+		}
+		
+		function changeCheckAllStatus(){
+			for(check of checks){
+				// 하나라도 checked 상태 아닐 때
+				if(!check.checked){
+					checkAll.checked = false
+					return 
+				}
+			}
+			// 모두 checked 상태일 때
+			checkAll.checked = true
+		}
+		 
+
+	</script>
+</body>
+</html>

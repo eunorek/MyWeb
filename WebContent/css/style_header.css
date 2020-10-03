@@ -47,16 +47,21 @@
 		float: left;
 	
 	}
-	
-	#header_nav li{
+/* for nav menus only */
+	#header_nav>ul>li{
 		float: left;
 		list-style: none;
 		height: 50px;
 		width: auto;
 		display: inline-block;
 		line-height: 50px;
-		border: 1px black solid;
 		margin: 0 15px;
+	}
+	
+/* overrides nav menu style for dropdown items */	
+	.dropdown-menu>li{
+		height: auto;
+		line-height: 30px;
 	}
 	
 	.nav_menu{
@@ -67,10 +72,26 @@
 		text-align: left;
 	}
 	
+
+
+	.nav_menu:visited{
+		color: #CCCCCC;
+		text-decoration: none;	
+	}
+	
+	.nav_menu:focus{
+		color: #CCCCCC;
+		text-decoration: none;	
+	}	
 	.nav_menu:hover{
 		color:white;
 		text-decoration: none;
-	}
+		
+	}	
+	.dropdown-menu li{
+		margin: 0;
+	
+	}	
 	
 	.nav_signin{
 		color: #DE8AE5;
@@ -79,11 +100,21 @@
 		font-size: 1.5rem;
 		text-align: left;	
 	}
+	.nav_signin:visited{
+		color: #DE8AE5;
+		text-decoration: none; 
+	}	
+	
+	.nav_signin:focus{
+		color: #DE8AE5;
+		text-decoration: none;
+	}	
 	
 	.nav_signin:hover{ 
 		color: #F9B2FF;
 		text-decoration: none;
 	}
+		
 	
 	#header_sub{
 background-color: green;

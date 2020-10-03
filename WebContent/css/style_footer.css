@@ -1,10 +1,30 @@
 @charset "UTF-8";
 	
 	footer{
-	background-color: #1A1A1AE6;
+	/*background-color: #1A1A1AE6;*/
+	background-color: #262626;
+	color: red;
 		height: 239px;
 		width: 100%;
 		margin-bottom: 0;
 		margin-top: 10px;
-	
 	}
+	
+	.footer-top{
+		height: 41px;
+		width: 100%;
+		margin: auto 0;
+	}
+	
+	.footer-middle{
+		background-color: #2F2F2F;
+		height: 94px;
+		width: 100%;
+		margin: auto 0;
+	}
+	
+	.footer-bottom{
+		height: 110px;
+		width: 100%;
+		margin: auto 0;
+	}	
