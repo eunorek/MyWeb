@@ -5,16 +5,16 @@
 		}
 		
 	#main_container{
-	background-color: red;
+/*background-color: red;*/
 		height: auto;
-		width: 95%;
+		width: 80%;
 		margin: 80px auto;
 		display: flex;
 		flex-direction: column;
 	}
 
 	#featured{
-background-color:purple;
+border: 2px purple solid;
 		height: auto;
 		width: 100%;
 		display: flex;
@@ -22,12 +22,16 @@ background-color:purple;
 	}
 	
 	#featured_title{
-		margin-bottom: 20px;
+
+		width: 100%;
+		height: 16px;
+		font-size: 16px;
+		font-weight: 600;
 	}
 	
 	#main_content_big{
 		background-color: black;
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 
 
@@ -38,14 +42,11 @@ background-color:purple;
 
 	}
 	
-	#featured_logo{
 
-
-	}
 	
 	#main_content_small{
 background-color: blue;
-		width: 90%;
+		width: 100%;
 		height: auto;
 		margin: 10px auto;
 	}
@@ -53,7 +54,7 @@ background-color: blue;
 	.featured_small{
 		background-color: white;
 		width: 24.2%;
-		height: auto;
+		height: 185px;
 		display: inline-block;
 		box-sizing: border-box;
 		float: left; 
@@ -79,9 +80,9 @@ background-color: blue;
 background-color: white;
 	}
 	
-	#galaxy_section > div{
+	/*#galaxy_section > div{
 		width: 70%;
-	}
+	}*/
 	
 	.galaxy_section_info{
 		text-decoration: none;
@@ -96,11 +97,9 @@ background-color: white;
 	}
 	
 	#explore_galaxy_container{
-		width: 25%;
-		
-		margin-left: 60px;
+
 		border-left: 1px #1A1A1AE6 solid;
-		padding-left: 44px;
+
 	}
 	
 	
@@ -121,4 +120,8 @@ background-color: white;
 		text-decoration: none;
 		color: #86328a;
 		font-weight: bold;
+	}
+	
+	#explore_galaxy_text a:hover{
+		text-decoration: none;
 	}

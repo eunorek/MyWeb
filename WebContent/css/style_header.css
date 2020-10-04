@@ -48,7 +48,7 @@
 	
 	}
 /* for nav menus only */
-	#header_nav>ul>li{
+	#header_nav>ul>li, .tray_logo{
 		float: left;
 		list-style: none;
 		height: 50px;
@@ -61,10 +61,10 @@
 /* overrides nav menu style for dropdown items */	
 	.dropdown-menu>li{
 		height: auto;
-		line-height: 30px;
+		line-height: 25px;
 	}
 	
-	.nav_menu{
+	.nav_menu, .tray_logo{
 		color: #CCCCCC;
 		text-decoration: none;
 		font-weight: bold;
@@ -74,16 +74,16 @@
 	
 
 
-	.nav_menu:visited{
+	.nav_menu:visited, .tray_logo:visited{
 		color: #CCCCCC;
 		text-decoration: none;	
 	}
 	
-	.nav_menu:focus{
+	.nav_menu:focus, .tray_logo:focus{
 		color: #CCCCCC;
 		text-decoration: none;	
 	}	
-	.nav_menu:hover{
+	.nav_menu:hover, .tray_logo:hover{
 		color:white;
 		text-decoration: none;
 		
@@ -115,11 +115,18 @@
 		text-decoration: none;
 	}
 		
-	
-	#header_sub{
-background-color: green;
+/* header nav menu on the right side */	
+	#header_tray{
 		width: 15%;
 		height: 50px;
 		display: inline-block;
 		float: right;
 	}
+
+	
+	#tray_logo img{
+		width: auto;
+		height: 100%;
+		position: absolute;
+		top: 7px;
+	}	
