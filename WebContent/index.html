@@ -11,15 +11,20 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- css files -->
 <link href="./css/reset.css" rel="stylesheet">
 <link href="./css/style_header.css" rel="stylesheet">
 <link href="./css/style_content.css" rel="stylesheet">
 <link href="./css/style_footer.css" rel="stylesheet">
 
+<!-- fonts -->
+<script src="https://kit.fontawesome.com/323970fb5e.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<img src="./images/common/header_top.jpg" id="header_top">
+		<img src="./images/common/page_border.jpg" id="header_top">
 		<div id="header_container">
 			<div id="header_logo" class="header_menu">
 				<img src="./images/common/gog_logo.svg">
@@ -42,37 +47,45 @@
 							<li>Indie</li>
 							<li>RPG</li>
 							<li>Shooters</li>
+							<li>Simulation</li>
+							<li>Sports & Racing</li>
+							<li>Strategy</li>
+							<li>Movies for gamers</li>
+							<li class="divider"></li>
+							<li>Browse all games</li>
 						</ul>
 					
 					</li>
 					<li class="dropdown">
 						<a href="#" class="nav_menu dropdown-toggle" data-toggle="dropdown">ABOUT ∨</a>
 						<ul class="dropdown-menu">
-							<li>New releases</li>
-							<li>Bestsellers</li>
-							<li>On sale now</li>
-							<li>Action</li>
-							<li>Adventure</li>
+							<li>GOG.com</li>
+							<li>GOG Galaxy</li>
+							<li class="divider"></li>
+							<li>Join the team</li>
 						</ul>					
 					</li>
 					<li class="dropdown">
 						<a href="#" class="nav_menu dropdown-toggle" data-toggle="dropdown">COMMUNITY ∨</a>
 						<ul class="dropdown-menu">
-							<li>New releases</li>
-							<li>Bestsellers</li>
-							<li>On sale now</li>
-							<li>Action</li>
-							<li>Adventure</li>
+							<li>All forums</li>
+							<li>General discussion forum</li>
+							<li>Forum replies</li>
+							<li>Community wishlist</li>
+							<li class="divider"></li>
+							<li>Facebook</li>
+							<li>Twitter</li>
+							<li>Twitch</li>
 						</ul>					
 					</li>
 					<li class="dropdown">
 						<a href="#" class="nav_menu dropdown-toggle" data-toggle="dropdown">SUPPORT ∨</a>
 						<ul class="dropdown-menu">
-							<li>New releases</li>
-							<li>Bestsellers</li>
-							<li>On sale now</li>
-							<li>Action</li>
-							<li>Adventure</li>
+							<li>Game technical issues</li>
+							<li>Orders and payments</li>
+							<li>Account and website</li>
+							<li>Downloads</li>
+							<li>GOG Galaxy</li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -88,36 +101,43 @@
 					</li>			
 				</ul> 
 			</nav>
-			<nav id="header_sub" class="header_menu"></nav>
+			<nav id="header_tray" class="header_menu">
+				<div class="tray_logo"><i class="fas fa-shopping-cart fa-lg"> 0</i></div>
+				<div class="tray_logo"><i class="fas fa-search fa-lg"></i></div>
+			</nav>
 		</div>	
 	</header>
+	<!-- end of header -->
+	
+	
 	<section id="main_container">
+		<!-- featured items -->
 		<article id="featured">
 			<div id="featured_title">
-				<span></span>
+				<span><i class="fas fa-highlighter"></i></span>
 				<span>Highlights</span>
 			</div>
 			
 			<hr>
 			<div id="main_content_big">
-				<img src="./images/featured_background.jpg" id="featured_bg">
+				<img src="./images/featured/control_bg.jpg" id="featured_bg">
 				<!--img src="./images/featured_logo.jpg" id="featured_logo"-->
 			</div>
 			<div id="main_content_small">
 				<div class="featured_small">
-					<img src="./images/featured_small_1.jpg">
+					<img src="./images/featured/featured_small_1.jpg">
 					<div class="featured_small_label"></div>
 				</div>
 				<div class="featured_small">
-					<img src="./images/featured_small_2.jpg">
+					<img src="./images/featured/featured_small_2.jpg">
 					<div class="featured_small_label"></div>
 				</div>
 				<div class="featured_small">
-					<img src="./images/featured_small_3.jpg">
+					<img src="./images/featured/featured_small_3.jpg">
 					<div class="featured_small_label"></div>
 				</div>				
 				<div class="featured_small">
-					<img src="./images/featured_small_4.jpg">
+					<img src="./images/featured/featured_small_4.jpg">
 					<div class="featured_small_label"></div>
 				</div>						
 				
@@ -125,7 +145,7 @@
 	
 		</article>
 		<article id="galaxy_section">
-			<div id="galaxy_section_container">
+			<div id="galaxy_section_container" class="col-lg-8">
 				<a class="galaxy_section_info" href="https://www.gog.com/about_gog">
 					We are GOG.COM, the 
 					<span class="galaxy_section_highlighted">DRM-fee</span> 
@@ -136,7 +156,7 @@
 					so make yourself at home.
 				</a>
 			</div>
-			<div id="explore_galaxy_container">	
+			<div id="explore_galaxy_container" class="col-lg-4">	
 				<div id="explore_galaxy_logo">
 					<a href="https://www.gogalaxy.com/">
 						<img src="./images/galaxy_logo.png">
